@@ -50,30 +50,7 @@
 			<fileset dir="lib" includes="**/install.xml"/>
 		</ivy:buildlist>
 		
-		<echo message="My build-path is ${toString:muhkuh-build-path}" />
-		
-		
-		<!-- NOTE: These properties will be generated somehow. -->
-		<property name="mbs.install.org.muhkuh.tests.romcrc.module_name" value="test01"/>
-		<property name="mbs.install.org.muhkuh.tests.romcrc.test_name" value="CRCTEST_ROM"/>
-		
-		<property name="mbs.install.org.muhkuh.tests.uart.module_name" value="test02"/>
-		<property name="mbs.install.org.muhkuh.tests.uart.test_name" value="UART_TEST"/>
-		
-		<property name="mbs.install.org.muhkuh.tests.spi_flash.module_name" value="test03"/>
-		<property name="mbs.install.org.muhkuh.tests.spi_flash.test_name" value="SPI_FLASH_W25Q32"/>
-		
 		<subant target="install" buildpathref="muhkuh-build-path" inheritAll="true" inheritRefs="true" />
-		
-		
-		<!-- This is a standalone CLI test. Install the muhkuh_tester_cli module. -->
-		<!-- <ant dir="${path.org.muhkuh.tools.muhkuh_tester_cli}" antfile="install.xml" /> -->
-		
-		<!-- Generate the build script for the test cases. -->
-		<!-- <xslt in="tests.xml" out="targets/install_testcases.xml" style="install_testcases.xsl"/> -->
-		
-		<!-- Execute the generated build script. -->
-		<!-- <ant dir="targets" antfile="install_testcases.xml" inheritAll="true" inheritRefs="true" /> -->
 	</target>
 
 
