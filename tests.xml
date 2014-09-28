@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MuhkuhTest>
+	<Testcase id="org.muhkuh.tests.romcrc" name="CRCTEST_ROM" />
+	
+	<Testcase id="org.muhkuh.tests.uart" name="UART_TEST" />
+	
+	<Testcase id="org.muhkuh.tests.spi_flash" name="SPI_FLASH_W25Q32">
+		<Parameter name="id">W25Q32</Parameter>
+	</Testcase>
+</MuhkuhTest>

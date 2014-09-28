@@ -1,0 +1,11 @@
+Test collection NXHX51-ETM R4
+=============================
+Christoph Thelen <cthelen@hilscher.com>
+:Author Initials: CT
+
+
+[[About, About]]
+== About
+
+This is a collection of test cases for the NXHX51-ETM R4 board.
+

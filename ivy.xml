@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+	<info organisation="org.muhkuh.tests" module="demo_test" revision="1.0.0">
+		<license name="GPL-2.0"/>
+		<ivyauthor name="Muhkuh team" url="https://github.com/muhkuh-sys" />
+		<description>
+			This is an example showing how to combine test cases to a complete test.
+		</description>
+	</info>
+	
+	<publications>
+		<artifact name="demo_test" ext="zip" type="zip" packaging="zip" />
+	</publications>
+	
+	<dependencies>
+		<!-- This is the tester framework and the driver. -->
+		<dependency org="org.muhkuh.tools" name="bootloader_windows_driver" rev="2.0.1"/>
+		<dependency org="org.muhkuh.tools" name="muhkuh_tester_cli" rev="1.0.0" />
+		
+		<!-- Here are the test cases. -->
+		<dependency org="org.muhkuh.tests" name="romcrc" rev="1.0.0"/>
+		<dependency org="org.muhkuh.tests" name="uart" rev="1.0.0"/>
+		<dependency org="org.muhkuh.tests" name="spi_flash" rev="1.0.0"/>
+	</dependencies>
+</ivy-module>
+
